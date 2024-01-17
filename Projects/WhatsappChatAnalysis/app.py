@@ -7,15 +7,15 @@ st.title(":chart_with_upwards_trend: Whatsapp Chat Analyzer")
 
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
-    # bytes_data = uploaded_file.getvalue()
-    # data = bytes_data.decode("utf-8")
-    # df = preprocessor.preprocess(data)
+    bytes_data = uploaded_file.getvalue()
+    data = bytes_data.decode("utf-8")
+    df = preprocessor.preprocess(data)
 
-    with open("chat.txt", "wb") as f:
-        f.write(uploaded_file.get_buffer())
+    # with open("chat.txt", "wb") as f:
+    #     f.write(uploaded_file.get_buffer())
 
-    df = preprocessor.preprocess()
-    
+    # df = preprocessor.preprocess()
+
     # fetch unique users
     user_list = df["user"].unique().tolist()
     user_list.remove("group_notification")
