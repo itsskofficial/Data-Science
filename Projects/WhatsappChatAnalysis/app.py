@@ -3,6 +3,8 @@ import streamlit as st
 import preprocessor, helper
 import matplotlib.pyplot as plt
 
+st.set_page_config(page_title = "Whatsapp Chat Analyzer", page_icon = "📈", layout = "wide", initial_sidebar_state = "expanded")
+
 st.title(":chart_with_upwards_trend: Whatsapp Chat Analyzer")
 
 uploaded_file = st.sidebar.file_uploader("Choose a file")
@@ -129,5 +131,5 @@ if uploaded_file is not None:
             st.dataframe(emoji_df)
         with col2:
             fig,ax = plt.subplots()
-            ax.pie(emoji_df[1].head(), labels=emoji_df[0].head(), autopct="%0.2f")
+            ax.pie(emoji_df["Count"].head(), labels=emoji_df["Emoji"].head(), autopct="%0.2f")
             st.pyplot(fig)

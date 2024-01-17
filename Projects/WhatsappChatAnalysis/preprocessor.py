@@ -3,7 +3,7 @@ import pandas as pd
 
 def preprocess(data):
     # f = open("chat.txt", "r", encoding = "utf-8")
-    # data = f.read()
+    # data = f.read()   
 
     pattern = "\d{1,2}/\d{1,2}/\d{2,4},\s\d{1,2}:\d{2}\s[APMapm]{2}\s-\s"
 
@@ -17,7 +17,7 @@ def preprocess(data):
     try:
         df["message_date"] = pd.to_datetime(df["message_date"], format="%m/%d/%y, %I:%M %p - ")
     except:
-        df["message_date"] = pd.to_datetime(df["message_date"], format="%d/%m/%Y, %I:%M %p - ")
+        df["message_date"] = pd.to_datetime(df["message_date"], format="%d/%m/%y, %I:%M %p - ")
 
     df.rename(columns = {"message_date" : "date"}, inplace = True)
 
@@ -26,12 +26,12 @@ def preprocess(data):
 
     for message in df["user_message"]:
         entry = re.split("([\w\W]+?):\s", message)
-    if entry[1 : ]:
-        users.append(entry[1])
-        messages.append(entry[2])
-    else:
-        users.append("group_notification")
-        messages.append(entry[0])
+        if entry[1:]:
+            users.append(entry[1])
+            messages.append(entry[2])
+        else:
+            users.append("group_notification")
+            messages.append(entry[0])
 
     df["user"] = users
     df["message"] = messages
