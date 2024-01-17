@@ -1,1 +1,2 @@
-The projects are created by Jose Marcial Portilla with Pierian Data
+# Data Science
+A collection of data science projects, programs and papers
