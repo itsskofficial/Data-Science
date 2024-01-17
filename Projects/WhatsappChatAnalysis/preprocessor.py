@@ -1,7 +1,7 @@
 import re
 import pandas as pd
 
-def preprocess():
+def preprocess(data):
     # f = open("chat.txt", "r", encoding = "utf-8")
     # data = f.read()
 
