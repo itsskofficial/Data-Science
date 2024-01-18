@@ -14,10 +14,15 @@ def preprocess(data):
         date.replace("\u202f", " ")
 
     df = pd.DataFrame({"user_message" : messages, "message_date" : dates})
-    try:
-        df["message_date"] = pd.to_datetime(df["message_date"], format="%m/%d/%y, %I:%M %p - ")
-    except:
-        df["message_date"] = pd.to_datetime(df["message_date"], format="%d/%m/%y, %I:%M %p - ")
+    
+    date_formats = ["%m/%d/%y, %I:%M %p - ", "%m/%d/%Y, %I:%M %p - ", "%d/%m/%Y, %I:%M %p - "]
+
+    for format_str in date_formats:
+        try:
+            df["message_date"] = pd.to_datetime(df["message_date"], format = format_str)
+            break  # break if successfully parsed with a format
+        except ValueError:
+            pass
 
     df.rename(columns = {"message_date" : "date"}, inplace = True)
 
