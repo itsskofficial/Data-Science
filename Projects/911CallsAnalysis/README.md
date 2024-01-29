@@ -31,6 +31,8 @@
 
 ## About The Project
 
+![Screen Shot](911-calls-analysis.png)
+
 The 911 Calls Analysis Project is a data-driven initiative aimed at extracting valuable insights from emergency call data. Leveraging advanced analytics, this project seeks to examine patterns, response times, and critical information associated with emergency calls. By employing data visualization techniques and statistical analysis, the project aims to enhance emergency response systems, optimize resource allocation, and contribute to the overall improvement of public safety
 
 ## Built With
