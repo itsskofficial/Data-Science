@@ -31,6 +31,8 @@
 
 ## About The Project
 
+![Screen Shot](stock-price-analysis.png)
+
 The Stock Price Analysis Project is a data-driven initiative aimed at extracting valuable insights from historical stock price data. Leveraging advanced analytics, this project seeks to analyze trends, patterns, and crucial information associated with stock prices. By employing data visualization techniques and statistical analysis, the project aims to provide investors and analysts with valuable tools for making informed decisions in the financial markets.
 
 ## Built With
