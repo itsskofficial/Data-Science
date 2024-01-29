@@ -3,7 +3,7 @@
   <h3 align="center">WhatsappChatAnalysis</h3>
 
   <p align="center">
-    A project for analyzing and extracting insights from stock price data
+    A project for analyzing and extracting insights from WhatsApp chat data
     <br/>
     <br/>
     <a href="https://itsskofficial-whatsappchatanalyzer.streamlit.app">View Demo</a>
@@ -33,7 +33,7 @@
 
 ![Screen Shot](whatsapp-chat-analysis.png)
 
-The Stock Price Analysis Project is a data-driven initiative aimed at extracting valuable insights from historical stock price data. Leveraging advanced analytics, this project seeks to analyze trends, patterns, and crucial information associated with stock prices. By employing data visualization techniques and statistical analysis, the project aims to provide investors and analysts with valuable tools for making informed decisions in the financial markets.
+The Whatsapp Chat Analysis Project is a data-driven initiative aimed at extracting valuable insights from WhatsApp chat data. Leveraging advanced analytics, this project seeks to analyze trends, patterns, and crucial information associated with chat conversations. By employing natural language processing techniques and statistical analysis, the project aims to provide users with valuable tools for understanding communication patterns, sentiment analysis, and other insights derived from their WhatsApp chats.
 
 ## Built With
 
@@ -41,8 +41,8 @@ This section should list any major frameworks that you built your project using.
 
 * [Python](https://www.python.org/)
 * [Pandas](https://pandas.pydata.org/)
-* [Matplotlib](https://matplotlib.org/)
-* [Numpy](https://numpy.org/)
+* [NLTK](https://www.nltk.org/)
+* [Streamlit](https://streamlit.io/)
 
 ## Getting Started
 
@@ -70,7 +70,7 @@ To get a local copy up and running follow these simple example steps.
 
 2. **Enter into the directory**
     ```sh
-    cd Projects/StockPriceAnalysis
+    cd Projects/WhatsappChatAnalysis
     ```
 
 3. **Install pip packages**
@@ -81,7 +81,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Usage
 
-The Stock Price Analysis project is a crucial tool with diverse applications, primarily focused on providing valuable insights into historical stock price data. By delving into trends and patterns, this analysis tool offers investors and analysts valuable tools for making informed decisions in the financial markets. Utilizing data visualization techniques and statistical analysis, the project aims to enhance financial decision-making processes and contribute to overall market understanding.
+The Whatsapp Chat Analysis project is a crucial tool with diverse applications, primarily focused on providing valuable insights into WhatsApp chat data. By delving into trends and patterns, this analysis tool offers users valuable tools for understanding communication dynamics, sentiment analysis, and other insights derived from their WhatsApp conversations. Utilizing natural language processing techniques and statistical analysis, the project aims to enhance users' understanding of their communication patterns.
 
 ## Contributing
 
