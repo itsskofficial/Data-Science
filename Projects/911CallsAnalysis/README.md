@@ -37,7 +37,7 @@ The 911 Calls Analysis Project is a data-driven initiative aimed at extracting v
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [Python](htttps://python.org)
+* [Python](https://www.python.org/)
 * [Pandas](https://pandas.pydata.org/)
 * [Matplotlib](https://matplotlib.org/)
 * [Numpy](https://numpy.org/)
